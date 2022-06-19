@@ -63,17 +63,16 @@ margin-top: 20px;
 }
 
 
-       /* Hide scrollbar for Chrome, Safari and Opera */
        .comment__input_imojis::-webkit-scrollbar {
         display: none;
       }
       
-      /* Hide scrollbar for IE, Edge and Firefox */
+
       .comment__input_imojis {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none; 
+        scrollbar-width: none;  
       }
-      /* Hide scrollbar for Chrome, Safari and Opera */
+   
       .comment__input_imojis::-webkit-scrollbar {
         display: none;
       }
@@ -88,17 +87,17 @@ padding: 2px;
 
 
 
-       /* Hide scrollbar for Chrome, Safari and Opera */
+    
        .loop_comment::-webkit-scrollbar {
        display: none;
      }
      
-     /* Hide scrollbar for IE, Edge and Firefox */
+
      .loop_comment {
-       -ms-overflow-style: none;  /* IE and Edge */
-       scrollbar-width: none;  /* Firefox */
+       -ms-overflow-style: none; 
+       scrollbar-width: none;  
      }
-     /* Hide scrollbar for Chrome, Safari and Opera */
+    
      .loop_comment::-webkit-scrollbar {
        display: none;
      }
