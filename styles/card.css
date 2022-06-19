@@ -134,8 +134,7 @@
     border: 0px solid black;
     border-radius: 4px;
     overflow: hidden;
-    /* box-shadow: 0px 6px 18px -9px rgba(0,0,0,0.75); */
-    /* cursor: pointer; */
+
     transition:transform 100ms ease-in;
     z-index: 10;
     background-color: white;
@@ -145,16 +144,12 @@
     -ms-user-select:none;
     }
     
-    /* .cardmain:hover{
-    /* transform: scale(1.04); */
-    
-    
-    /* } */ */
+
     
     
     .cardmain{
     margin-top: 7px;
-    /* width: 350px; */
+
     
     z-index: 100;
     user-select: none;
@@ -533,7 +528,7 @@
     
     }
     
-    /* card description */
+
     .card__contentdescription>.MuiSvgIcon-root{
     font-size: 30px;
     color:  #2196f3;
@@ -660,15 +655,15 @@
     z-index: 100;
     border:1px solid lightgray;
     }
-    /* Hide scrollbar for Chrome, Safari and Opera */
+
     .card__emojis::-webkit-scrollbar {
         display: none;
       }
       
-      /* Hide scrollbar for IE, Edge and Firefox */
+ 
       .card__emojis {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none; 
+        scrollbar-width: none;  
       }
     .card__emojis>p{
     padding:5px;
