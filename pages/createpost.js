@@ -353,35 +353,35 @@ return (
 <input type="radio" id="Local" name="gender" value="local"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}
 />
-<label for="Local">Local </label><br/>
+<label htmlFor="Local">Local </label><br/>
 <input type="radio" id="male" name="gender" value="world"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}
 />
-<label for="male">World  </label><br/>
+<label htmlFor="male">World  </label><br/>
 <input type="radio" id="male" name="gender" value="science"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Sceince </label><br/>
+<label htmlFor="male">Sceince </label><br/>
 <input type="radio" id="male" name="gender" value="technology"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Technology</label><br/>
+<label htmlFor="male">Technology</label><br/>
 <input type="radio" id="male" name="gender" value="sports"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Sports</label><br/>
+<label htmlFor="male">Sports</label><br/>
 <input type="radio" id="male" name="gender" value="EntertainmenNews"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Entertainment</label><br/>
+<label htmlFor="male">Entertainment</label><br/>
 <input type="radio" id="male" name="gender" value="gallery"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Gallery</label><br/>
+<label htmlFor="male">Gallery</label><br/>
 <input type="radio" id="male" name="gender" value="discovery"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Discovery</label><br/>
+<label htmlFor="male">Discovery</label><br/>
 <input type="radio" id="male" name="gender" value="top"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Top Stories</label><br/>
+<label htmlFor="male">Top Stories</label><br/>
 <input type="radio" id="male" name="gender" value="trend"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">Trending</label><br/>
+<label htmlFor="male">Trending</label><br/>
 </div>
 ):""
 }
