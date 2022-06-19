@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import Appbar from '../components/Appbar'
 import Bottombar from '../components/Bottombar'
 import Buttonadd from '../components/Buttonadd'
-import Page from './Page'
+import Page from '../components/Page'
 import { getSession, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
