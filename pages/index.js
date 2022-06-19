@@ -19,7 +19,7 @@ export default function Home({ posts, articles }) {
     required: true,
     onUnauthenticated() {
       // The user is not authenticated, handle it here.
-      router.push("/home");
+      router.push("/account");
     },
   });
   return (
@@ -52,7 +52,7 @@ export async function getServerSideProps(context) {
     return {
       redirect: {
         permanent: false,
-        destination: "/home",
+        destination: "/account",
       },
     };
   }
