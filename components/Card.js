@@ -327,7 +327,7 @@ return (
 
 
 
-<div className="cardmain" id="cards" oncontextmenu="return false" onselectstart="return false"oncut="return false"onpaste="return false" oncopy="return false">
+<div className="cardmain" id="cards" onContextmenu="return false" onselectstart="return false"onCut="return false"onPaste="return false" onCopy="return false">
 {post.reposter==""?"":(<div className='repost'>
   <p>{post.reposter}</p>
   <Dot color='tomato'/>
