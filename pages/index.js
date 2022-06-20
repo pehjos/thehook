@@ -35,10 +35,10 @@ export default function Home({ posts, articles }) {
 
       <main className={styles.main}>
    
-     {/* <Appbar/>
+     <Appbar/>
      <Buttonadd/>
        <Page posts={posts} />
-    <Bottombar/> */}
+    <Bottombar/>
       </main>
     </div>
   )
