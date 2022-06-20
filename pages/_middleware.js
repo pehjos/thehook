@@ -11,7 +11,7 @@ export  async function middleware(req) {
           secureCookie: process.env.NODE_ENV === "production",
         });
 
-        if (!session) return NextResponse.rewrite(new URL('/', req.url))
+        if (!session) return NextResponse.rewrite(new URL('/account', req.url))
 }
 }
 
