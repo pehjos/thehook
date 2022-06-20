@@ -327,7 +327,7 @@ return (
 
 
 
-<div className="cardmain" id="cards" onContextMenu="return false" onselectstart="return false"onCut="return false"onPaste="return false" onCopy="return false">
+<div className="cardmain" id="cards" oncontextmenu="return false" onselectstart="return false"oncut="return false"onpaste="return false" oncopy="return false">
 {post.reposter==""?"":(<div className='repost'>
   <p>{post.reposter}</p>
   <Dot color='tomato'/>
@@ -340,7 +340,7 @@ return (
 <div className="card__headerleft">
 <div className="imgfoot">
 {/* <h4>{tag}</h4> */}
-<Avatar src={post.userImg} style={{width:40,height:40,}}/>
+<Avatar src={post.userImg} style={{width:30,height:30,}}/>
 
 
 
@@ -480,10 +480,10 @@ i<56&&(
   <div className='loop_comment'>
   {post.comments.map((comment)=>(
 
-<div key={comment.name} className='comment__user_comments'>
+<div className='comment__user_comments'>
   
 <div className='avatar_comment'>
-<Avatar src={comment.img}/>
+<Avatar style={{width:25,height:25,}}  src={comment.img}/>
 </div>
 <div className='avatar_comment1'>
   <div className='time_name'>

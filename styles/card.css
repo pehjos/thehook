@@ -38,9 +38,10 @@
   width:100px;
   }
   .card__headerleft>h3{
-  
+    font-family: 'EB Garamond', serif;
+    font-family: 'IBM Plex Serif', serif;
     margin:2px;
-  color: grey;
+  color: black;
     overflow:hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -93,7 +94,8 @@
   -moz-user-select: none;
   -ms-user-select:none;
   display: flex;
-  
+  font-family: 'EB Garamond', serif;
+font-family: 'IBM Plex Serif', serif;
   align-items: center;
   
   
@@ -101,7 +103,8 @@
   }
   .card__headerright>p{
   font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'IBM Plex Serif', serif;
   justify-content: baseline;
   color: rgb(233, 174, 65);
   font-size: 13px;
@@ -117,7 +120,7 @@
   .card__headerright>img{
   height: 20px;
   width: 20px;
-  border-radius: 10px;
+
   
   
   
@@ -134,7 +137,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 4px;
   overflow: hidden;
-  
+ 
   transition:transform 100ms ease-in;
   z-index: 10;
   background-color: white;
@@ -144,12 +147,11 @@
   -ms-user-select:none;
   }
   
-  
-  
+
   
   .cardmain{
   margin-top: 7px;
- 
+
   
   z-index: 100;
   user-select: none;
@@ -165,16 +167,7 @@
   padding: 4px;
   border-radius: 6px;
   }
-  .imgfoot>img {
-  height:30px;
-  width:30px;
-  border-left: 1px solid grey;
-  border-radius :50%;
-  } 
-  .card__rank>h4{
-  font-size :12px;
-  color:#2196f3;
-  }
+  
   
   .visible{
   display: flex;
@@ -186,32 +179,8 @@
   
   margin:10px;
   }
-  .card__rank{
-  display: flex;
-  align-items: center;
-  margin:5px;
-  
-  }
-  .card__rank>p{
-  display: flex;
-  align-items: center;
-  margin:5px;
-  color:tomato;
-  }
-  .card__rank>h6{
-  display: flex;
-  align-items: center;
-  margin:10px;
-  color:#2196f3;
-  font-size: 16px;
-  }
-  .visible>p{
-  display: flex;
-  align-items: center;
-  justify-content:space-around;
-  color:gray;
-  margin:3px;
-  }
+ 
+ 
   
   .card__image>img{
   
@@ -248,8 +217,8 @@
     display:flex;
     align-items: center;
     color: #2196f3;
-  height: 7px;
-  
+  height: 2px;
+  margin-top: -20px;
     }
     .link_card>.MuiSvgIcon-root{
   font-size:24px;
@@ -289,14 +258,15 @@
   font-weight: 700;
   overflow:hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   text-overflow:ellipsis;
   -webkit-box-orient: vertical;
   white-space: wrap;
   color: #333;
   text-align: left;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 17px;
+  font-family: 'EB Garamond', serif;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 16px;
   overflow-wrap: anywhere;
   margin-top: -4px;
   }
@@ -315,20 +285,21 @@
   background-color:white;
   }
   .card__contentdescription p{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 600;
+    font-family: 'EB Garamond', serif;
+    font-family: 'IBM Plex Serif', serif;
+  font-weight: 500;
   overflow:hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   text-overflow:ellipsis;
   -webkit-box-orient: vertical;
   white-space: wrap;
   justify-content: baseline;
-  color:rgba(51, 51, 51, 0.74);
+  color:#333;
   margin-top:-10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 15px;
   overflow-wrap: anywhere;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -339,8 +310,8 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
   }
   .card__contentdescription >h6{
-  font-family: 'Commissioner', sans-serif;
-  font-family: 'Quicksand', sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'IBM Plex Serif', serif;
   font-weight: 600;
   overflow:hidden;
   display: -webkit-box;
@@ -360,8 +331,8 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
   }
   .card__contentdescription >h5{
-  font-family: 'Commissioner', sans-serif;
-  font-family: 'Quicksand', sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'IBM Plex Serif', serif;
   font-weight: 600;
   
   justify-content: baseline;
@@ -527,6 +498,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
   }
   
+
   .card__contentdescription>.MuiSvgIcon-root{
   font-size: 30px;
   color:  #2196f3;
@@ -658,9 +630,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       display: none;
     }
     
-    
+   
     .card__emojis {
-      -ms-overflow-style: none; 
+      -ms-overflow-style: none;  
       scrollbar-width: none; 
     }
   .card__emojis>p{
