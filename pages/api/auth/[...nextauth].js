@@ -14,7 +14,7 @@ export default NextAuth({
   secret: process.env.JWT_SECRET,
   adapter: MongoDBAdapter(clientPromise),
   pages: {
-    signIn: "/account",
+    signIn: "/",
   },
   session: {
     strategy: "jwt",

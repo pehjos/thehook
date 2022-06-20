@@ -16,10 +16,10 @@ import Form from './createpost'
 export default function Home({ posts, articles }) {
   const router = useRouter();
   const { status } = useSession({
-    required: true,
+    required: false,
     onUnauthenticated() {
       // The user is not authenticated, handle it here.
-      router.push("/account");
+      router.push("/");
     },
   });
   return (
@@ -47,15 +47,15 @@ export default function Home({ posts, articles }) {
 
 export async function getServerSideProps(context) {
   // Check if the user is authenticated on the server...
-  const session = await getSession(context);
-  if (!session) {
-    return {
-      redirect: {
-        permanent: false,
-        destination: "/account",
-      },
-    };
-  }
+  // const session = await getSession(context);
+  // if (!session) {
+  //   return {
+  //     redirect: {
+  //       permanent: false,
+  //       destination: "/account",
+  //     },
+  //   };
+  // }
 
   // Get posts on SSR
   const { db } = await connectToDatabase();
