@@ -327,7 +327,7 @@ return (
 
 
 
-<div className="cardmain" id="cards" onContextmenu="return false" onselectstart="return false"onCut="return false"onPaste="return false" onCopy="return false">
+<div className="cardmain" id="cards" onContextMenu="return false" onselectstart="return false"onCut="return false"onPaste="return false" onCopy="return false">
 {post.reposter==""?"":(<div className='repost'>
   <p>{post.reposter}</p>
   <Dot color='tomato'/>
@@ -480,7 +480,7 @@ i<56&&(
   <div className='loop_comment'>
   {post.comments.map((comment)=>(
 
-<div className='comment__user_comments'>
+<div key={comment.name} className='comment__user_comments'>
   
 <div className='avatar_comment'>
 <Avatar style={{width:25,height:25,}}  src={comment.img}/>
