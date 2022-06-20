@@ -37,7 +37,7 @@ export default function Home({ posts, articles }) {
    
      <Appbar/>
      <Buttonadd/>
-       <Page posts={posts} />
+       {/* <Page posts={posts} /> */}
     <Bottombar/>
       </main>
     </div>
