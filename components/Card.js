@@ -15,6 +15,7 @@ import ThumbUpAltTwoToneIcon from '@mui/icons-material/ThumbUpAltTwoTone';
 import CloseTwoToneIcon from '@mui/icons-material/CloseTwoTone';
 import { useRecoilState } from "recoil";
 import { useSession } from "next-auth/react";
+import Image from 'next/image'
 import { handlePostState, getPostState } from "../atoms/postAtom";
 import { useRouter } from 'next/router'
 import ReactImageFallback from "react-image-fallback";
@@ -150,7 +151,7 @@ setHandlePost(true);
 const userId=session?.user?.email;
 const likedAlready=post.likeId.findIndex((like)=>like.userId===userId)
 
-console.log(likedAlready)
+
 const likePostwithId = async (e) => {
 if(likedAlready==-1){
 const response = await fetch(`/api/posts/${post._id}`, {
@@ -327,7 +328,7 @@ return (
 
 
 
-<div className="cardmain" id="cards" onContextMenu="return false" onselectstart="return false"onCut="return false"onPaste="return false" onCopy="return false">
+<div className="cardmain" id="cards">
 {post.reposter==""?"":(<div className='repost'>
   <p>{post.reposter}</p>
   <Dot color='tomato'/>
@@ -408,7 +409,7 @@ isVideoplaying?"":(
 {!post.image==""?(<ReactImageFallback 
 src={post.image}
 fallbackImage={optionalimage}
-alt="Loading... "
+alt={post.title}
 
 />):(
 <video src={post.video} onClick={Playvideo} ref={Videoref}  />
@@ -480,7 +481,7 @@ i<56&&(
   <div className='loop_comment'>
   {post.comments.map((comment)=>(
 
-<div key={comment.name} className='comment__user_comments'>
+<div className='comment__user_comments'>
   
 <div className='avatar_comment'>
 <Avatar style={{width:25,height:25,}}  src={comment.img}/>
