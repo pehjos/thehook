@@ -571,24 +571,29 @@ i<56&&(
 {post.comments==""?"":(<div className='comment_prev'>
 <div className='comment_prev_comments'>
 {post.comments.map((comment,i)=>(
-     i<3&&(
-<div key={comment.name} className='comment__user_comments'>
+     i<2&&(
+<div key={comment.name} className='timeline-container'>
   
-<div className='avatar_comment'>
+<div className='timeline-item'>
 <Avatar style={{width:20,height:20,}}  src={comment.img}/>
+<p>{comment.name}</p> 
+<Dot color="#2196f3"/>
+ <p style={{color: 'gray',fontSize:13}}>replying to @{post.name}</p>
+ <Dot color="#2196f3"/>
+<p style={{color: 'gray',fontSize:13}}>{moment(moment(post.createdAt)).twitterShort()}</p>
 </div>
-<div className='avatar_commen'>
-  <div className='time_name'>
- <p>{comment.name}</p> 
- <p>{moment(moment(comment.time)).twitterShort()}</p>
- </div>
+<div className='timeline-item-content'>
  <p>{comment.message1}</p>
  
 </div>
-</div>)))}
+
+</div>
+
+)))}
 
 </div>
 </div>)}
+
 </div>
 )
 }
