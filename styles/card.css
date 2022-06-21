@@ -286,7 +286,7 @@
   .card__contentdescription p{
   font-family: 'EB Garamond', serif;
   font-family: 'IBM Plex Serif', serif;
-  font-weight: 500;
+  font-weight: 600;
   overflow:hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
