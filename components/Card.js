@@ -352,9 +352,9 @@ return (
 <h3>{post.name}</h3>
 <NewReleasesRounded/>
 <Dot color="#2196f3"/>
-
-</div>
 <p>{moment(moment(post.createdAt)).twitterShort()}</p>
+</div>
+
 <p  style={{color: '#2196f3'}}>@{post.name}</p>
 <div   className="card__headerright">
 

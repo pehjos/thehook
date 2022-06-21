@@ -21,7 +21,7 @@
   }
   .card__headerleft>.MuiSvgIcon-root{
   color:  #2196f3;
-  font-size: 18px;
+  font-size: 15px;
   
   
   }
@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: right;
   margin-top: 12px;
-  margin-left: 1400%;
+  margin-left: 1500%;
   }
   .card__headerleft>a{
   text-decoration: none;
@@ -41,7 +41,7 @@
     font-family: 'EB Garamond', serif;
     font-family: 'IBM Plex Serif', serif;
     margin:2px;
-  color: black;
+ 
     overflow:hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -51,7 +51,7 @@
     justify-content: baseline;
     font-size: inherit;
     line-height: inherit;
-    font-weight: 700;
+    font-weight: 500;
     width: 90px;
     font-size:16px;
  
@@ -255,7 +255,7 @@ font-family: 'IBM Plex Serif', serif;
   
   }
   .card__contenttitle>h5{
-  font-weight: 700;
+  font-weight: 500;
   overflow:hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -266,7 +266,7 @@ font-family: 'IBM Plex Serif', serif;
   text-align: left;
   font-family: 'EB Garamond', serif;
   font-family: 'IBM Plex Serif', serif;
-  font-size: 16px;
+  font-size: 15px;
   overflow-wrap: anywhere;
   margin-top: -4px;
   }
