@@ -354,7 +354,7 @@ return (
 <p style={{color: 'gray',fontSize:13}}>{moment(moment(post.createdAt)).twitterShort()}</p>
 </div>
 
-<p  style={{color: 'rgba(128, 128, 128, 0.438)',fontSize:13}}>@{post.name}</p>
+<p  style={{color: 'gray',fontSize:13}}>@{post.name}</p>
 <div   className="card__headerright">
 
 {stated2?(<CloseTwoToneIcon onClick={ShowWatch2}/>):(<MoreHoriz onClick={ShowWatch2}/>)}
@@ -562,18 +562,33 @@ i<56&&(
 
 </div>
 
-{
-
-}
-
 
 </div>
 
 
 
 </div>
-{stated?(<Close onClick={ShowWatch} className="close"/>):""}
+{post.comments==""?"":(<div className='comment_prev'>
+<div className='comment_prev_comments'>
+{post.comments.map((comment,i)=>(
+     i<3&&(
+<div key={comment.name} className='comment__user_comments'>
+  
+<div className='avatar_comment'>
+<Avatar style={{width:20,height:20,}}  src={comment.img}/>
+</div>
+<div className='avatar_commen'>
+  <div className='time_name'>
+ <p>{comment.name}</p> 
+ <p>{moment(moment(comment.time)).twitterShort()}</p>
+ </div>
+ <p>{comment.message1}</p>
+ 
+</div>
+</div>)))}
 
+</div>
+</div>)}
 </div>
 )
 }
