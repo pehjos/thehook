@@ -2,7 +2,6 @@ import React, { useState,useRef } from 'react'
 import Linkify from 'react-linkify';
 import AddReactionOutlinedIcon from '@mui/icons-material/AddReactionOutlined';
 import optionalimage from './logo.jpg'
-import Moment from 'react-moment';
 import moment from "moment-twitter"
 import {Avatar} from '@mui/material'
 import useVideoPlayer from './VideoPlayer';
@@ -352,10 +351,10 @@ return (
 <h3>{post.name}</h3>
 <NewReleasesRounded/>
 <Dot color="#2196f3"/>
-<p>{moment(moment(post.createdAt)).twitterShort()}</p>
+<p style={{color: 'gray',fontSize:13}}>{moment(moment(post.createdAt)).twitterShort()}</p>
 </div>
 
-<p  style={{color: '#2196f3'}}>@{post.name}</p>
+<p  style={{color: 'rgba(128, 128, 128, 0.438)',fontSize:13}}>@{post.name}</p>
 <div   className="card__headerright">
 
 {stated2?(<CloseTwoToneIcon onClick={ShowWatch2}/>):(<MoreHoriz onClick={ShowWatch2}/>)}
@@ -425,8 +424,8 @@ alt={post.title}
 </div>
 
 <div className="link_card">
-<Link size={20} color="#2196f3"/>
-<p>hook.com</p>
+<Link size={20} color="rgba(128, 128, 128, 0.438)"/>
+<p style={{color:"rgba(128, 128, 128, 0.438)"}}>hook.com</p>
 <div className="imgfoot">
 
 {post.likes?.map((c, i) => (
