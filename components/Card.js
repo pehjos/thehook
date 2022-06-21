@@ -481,7 +481,7 @@ i<56&&(
   <div className='loop_comment'>
   {post.comments.map((comment)=>(
 
-<div className='comment__user_comments'>
+<div key={comment.name} className='comment__user_comments'>
   
 <div className='avatar_comment'>
 <Avatar style={{width:25,height:25,}}  src={comment.img}/>
