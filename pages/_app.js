@@ -3,6 +3,7 @@ import "../styles/form.css";
 import "../styles/appbar.css";
 import "../styles/card.css";
 import "../styles/main.css";
+import "../styles/onmind.css";
 import "../styles/comment.css";
 import "../styles/buttonadd.css";
 import { ThemeProvider } from "next-themes";
