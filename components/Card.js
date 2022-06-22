@@ -476,7 +476,7 @@ i<56&&(
 {!session?(<ChatSquareDots onClick={() => router.push('/account')}/>):(
 <ChatSquareDots onClick={ShowWatch7} color="grey"/>)}
 
-{comments.length>0?(<p>{comments.length}</p>):""}  
+{post.comments.length>0?(<p>{post.comments.length}</p>):""}  
 {statedcomment?(<div className='comment'>
   <Close onClick={ShowWatch7} />
   <div className='loop_comment'>
