@@ -242,18 +242,7 @@ description:'', });
 // SUBMIT DATA
 const handleSubmit = async (e) => {
 e.preventDefault();
-if(url=="" && urlVid=="" ){
-  swal.fire({
-    title: 'Please Upload  image or video',
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown'
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp'
-    }
-  })
-
-}
+// image restriction
 
 const response = await fetch("/api/posts", {
     method: "POST",

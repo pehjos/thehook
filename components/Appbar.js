@@ -1,9 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
+import { useSession, signOut } from "next-auth/react";
 import { Compass,ChatDots,Search,
 PersonCircle
 } from 'react-bootstrap-icons';
 function Appbar() {
+  const { data: session } = useSession();
   return (
     <div className="topbar">
     <div className="topbar-child" >
@@ -20,7 +22,7 @@ function Appbar() {
      />
       <div className="icon">
       <Search size={19} color="#333"   className="ml-4"/>
-<PersonCircle size={24} color="grey"  className="ml-4"/>
+<PersonCircle   onClick={() => signOut()} size={24} color="grey"  className="ml-4"/>
 </div>
     </div>   
     </div>

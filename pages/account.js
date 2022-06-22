@@ -11,18 +11,19 @@ return (
 <link rel="icon" href="/favicon.ico" />
 </Head>     
 
-{/* {Object.values(providers).map((provider) => ( */}
-<div key="{provider.name}">
+{Object.values(providers).map((provider) => (
+<div key={provider.name}>
 <div className="">
 <button
 className=""
-onClick={() => signIn("google", { callbackUrl: "/" })}
+onClick={() => signIn(provider.id, { callbackUrl: "/" })}
+                
 >
-Sign in
+Sign in with{provider.name}
 </button>
 </div>
 </div>
-{/* ))} */}
+))}
 
 </div>
 )
@@ -30,12 +31,12 @@ Sign in
 
 export default Account
 
-// export async function getServerSideProps(context) {
-// const providers = await getProviders();
+export async function getServerSideProps(context) {
+const providers = await getProviders();
 
-// return {
-// props: {
-// providers,
-// },
-// };
-// }
+return {
+props: {
+providers,
+},
+};
+}
