@@ -466,14 +466,16 @@ i<56&&(
 <p onClick={() => dispatch(likePost( post._id ,"😅",setTemp('😅'),setCount(count + 1)))}  >😅</p>
 <p onClick={() => dispatch(likePost( post._id ,"🤣",setTemp('🤣'),setCount(count + 1)))}  >🤣</p> */}
 {temp==""?"":(<Send onClick={()=>likePost(setStated1(false))}/>)}
-</div>):(!session?(<AddReactionOutlinedIcon id="chatbuble" />):
+</div>):(!session?(<AddReactionOutlinedIcon id="chatbuble"onClick={() => router.push('/account')} />):
 (<AddReactionOutlinedIcon id="chatbuble" onClick={ShowWatch1}/>))}
 {post.likes.length>0?(<p>{(post.likes.length)+(count)}</p>):""}  
 </div>
 
 
 <div className="footer_card_icon">
-<ChatSquareDots onClick={ShowWatch7} color="grey"/>
+{!session?(<ChatSquareDots onClick={() => router.push('/account')}/>):(
+<ChatSquareDots onClick={ShowWatch7} color="grey"/>)}
+
 {comments.length>0?(<p>{comments.length}</p>):""}  
 {statedcomment?(<div className='comment'>
   <Close onClick={ShowWatch7} />
@@ -498,7 +500,7 @@ i<56&&(
 <div className='comment__input'>
 <input type="text" placeholder='add comment'value={message1}
   onChange={event => SetMessage1(event.target.value)}/>
-<Send size={40} color="#2196f3" className='send' onClick={handleSubmit1}/>
+<Send size={30} color="#2196f3" className='send' onClick={handleSubmit1}/>
 </div>
 <div className='comment__input_imojis'>
 <p onClick={() =>SetMessage1((message1 + temp1),setTemp1("💖"))} >💖</p>
@@ -545,13 +547,13 @@ i<56&&(
 </div>):""} 
 </div>
 <div className="footer_card_icon">
-{likedAlready==-1?(<HandThumbsUp onClick={likePostwithId} color="grey"/>):
-(<HandThumbsUp onClick={likePostwithId} color="red"/>)
+{likedAlready==-1?(session?(<HandThumbsUp onClick={likePostwithId} color="grey"/>):(<HandThumbsUp onClick={() => router.push('/account')}/>))
+:(<HandThumbsUp onClick={likePostwithId} color="red"/>)
 }
 {post.likeId?.length>0?(<p>{post.likeId?.length}</p>):"" } 
 </div> 
 <div className="footer_card_icon" >
-<ArrowRepeat onClick={handleSubmit}  color="grey"/>
+{session?(<ArrowRepeat onClick={handleSubmit}  color="grey"/>):(<ArrowRepeat onClick={() => router.push('/account')}/>)}
 <p></p>   
 </div> 
 <div className="footer_card_icon">
@@ -571,7 +573,7 @@ i<56&&(
 {post.comments==""?"":(<div className='comment_prev'>
 <div className='comment_prev_comments'>
 {post.comments.map((comment,i)=>(
-     i<2&&(
+     i<3&&(
 <div key={comment.name} className='timeline-container'>
   
 <div className='timeline-item'>
@@ -580,9 +582,10 @@ i<56&&(
 <Dot color="#2196f3"/>
  <p style={{color: 'gray',fontSize:13}}>replying to @{post.name}</p>
  <Dot color="#2196f3"/>
-<p style={{color: 'gray',fontSize:13}}>{moment(moment(post.createdAt)).twitterShort()}</p>
+<p style={{color: 'gray',fontSize:13}}>{moment(moment(comment.time)).twitterShort()}</p>
 </div>
 <div className='timeline-item-content'>
+
  <p>{comment.message1}</p>
  
 </div>
