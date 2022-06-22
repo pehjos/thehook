@@ -6,7 +6,7 @@ import Bottombar from '../components/Bottombar'
 import Buttonadd from '../components/Buttonadd'
 import dynamic from 'next/dynamic'
 const Page = dynamic(() => import('../components/Page'))
-
+const Onmind = dynamic(() => import('../components/Onmind'))
 
 export default function Home({ posts, articles }) {
   return (
@@ -18,6 +18,7 @@ export default function Home({ posts, articles }) {
       </Head>
       <main className={styles.main}>
      <Appbar/>
+     <Onmind/>
      <Buttonadd/>
        <Page posts={posts} />
     <Bottombar/>
