@@ -578,9 +578,9 @@ i<56&&(
   
 <div className='timeline-item'>
 <Avatar style={{width:20,height:20,}}  src={comment.img}/>
-<p>{comment.name}</p> 
+<p className='twittername'>{comment.name}</p> 
 <Dot color="#2196f3"/>
- <p style={{color: 'gray',fontSize:13}}>replying to @{post.name}</p>
+ <p className='ttittename' style={{color: 'gray',fontSize:13}}>replying to @{post.name}</p>
  <Dot color="#2196f3"/>
 <p style={{color: 'gray',fontSize:13}}>{moment(moment(comment.time)).twitterShort()}</p>
 </div>
