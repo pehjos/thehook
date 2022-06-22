@@ -28,7 +28,7 @@ EditAttributesOutlined,
 PlayCircleOutline,
 ArrowBackIosNewOutlined
 } from '@mui/icons-material'
-import { ArrowRepeat,Share,Send, ChatSquareDots, HandThumbsUp, Link, Dot, Award, ClipboardX, AwardFill, PlayCircle, HandIndexThumbFill } from 'react-bootstrap-icons';
+import { ArrowRepeat,Share,Send, ChatSquareDots, HandThumbsUp, Link, Dot, Award, ClipboardX, AwardFill, PlayCircle, HandIndexThumbFill, Quote } from 'react-bootstrap-icons';
 
 
 function Card({ post})
@@ -397,7 +397,7 @@ return (
 {statebody?(<h6><Linkify>{articlebody}</Linkify></h6>):(<p ><Linkify>{post.description}</Linkify></p>)  }
 {/* {statebody?(<Close onClick={ShowWatchbody}/>):(<h5 onClick={ShowWatchbody}>{seeMore}</h5>)} */}
 </div>
-<div className="img__card">
+{post.image=="" && post.video==""?"":(<div className="img__card">
 <div  className="card__image">
 <div className="image_icon">
 {post.image!==""?"":
@@ -441,7 +441,7 @@ i<56&&(
 </div>   
 </div>
 </div>
-</div>
+</div>)}
 <div className="card__footer">
 <div className="footer_card_all"> 
 <div className="footer_card_icon">
@@ -586,8 +586,8 @@ i<56&&(
 </div>
 <div className='timeline-item-content'>
 
- <p>{comment.message1}</p>
- 
+ <p><q>{comment.message1}</q></p>
+
 </div>
 
 </div>
