@@ -62,7 +62,29 @@
   flex: 1;text-align: left;
   
   }
+  .ttittename{
+    font-family: 'EB Garamond', serif;
+    font-family: 'IBM Plex Serif', serif;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    justify-content: baseline;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 700;
+    width: 90px;
+    font-size:14px;
+    
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    flex: 1;text-align: left;
   
+  }
   .card__headerleft>a>h3{
   font-weight: 700;
   

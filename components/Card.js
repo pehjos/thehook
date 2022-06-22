@@ -354,7 +354,7 @@ return (
 <p style={{color: 'gray',fontSize:13}}>{moment(moment(post.createdAt)).twitterShort()}</p>
 </div>
 
-<p  style={{color: 'gray',fontSize:13}}>@{post.name}</p>
+<p className='ttittename' style={{color: 'gray',fontSize:13}}>@{post.name}</p>
 <div   className="card__headerright">
 
 {stated2?(<CloseTwoToneIcon onClick={ShowWatch2}/>):(<MoreHoriz onClick={ShowWatch2}/>)}
