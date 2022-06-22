@@ -1,6 +1,7 @@
 import React from 'react'
-import NavigateNext from '@mui/icons-material/Add'
+
 import { useRouter } from 'next/router'
+import { Pencil } from 'react-bootstrap-icons'
 function Quickac({ children, href }) {
     const router = useRouter()
 
@@ -11,7 +12,7 @@ function Quickac({ children, href }) {
 
      
         <div onClick={() => router.push('/createpost')} className="quickac__add">
-         <NavigateNext  className="Add"/> 
+         <Pencil /> 
         </div>
       
        

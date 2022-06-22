@@ -298,7 +298,7 @@
   margin-top:-10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 15px;
+  font-size: 16px;
   overflow-wrap: anywhere;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -781,8 +781,28 @@
   
   }
   .timeline-item-content >p{
-  
+    font-family: 'EB Garamond', serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 600;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    justify-content: baseline;
+    color: #333;
+   
   margin: 10px;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    flex: 1;text-align: left;
+    
+    
+    
   
   }
   .timeline-item{
