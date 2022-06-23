@@ -279,7 +279,7 @@
   text-overflow:ellipsis;
   -webkit-box-orient: vertical;
   white-space: wrap;
-  color: #000000;
+  color: #333;
   text-align: left;
   font-family: 'EB Garamond', serif;
   font-family: 'IBM Plex Serif', serif;
@@ -311,7 +311,7 @@
   -webkit-box-orient: vertical;
   white-space: wrap;
   justify-content: baseline;
-  color: #000000;
+  color: #333;
   margin-top:-10px;
   margin-left: 10px;
   margin-right: 10px;
