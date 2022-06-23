@@ -53,7 +53,7 @@ TransitionComponent={transition}
 </div>
 <div className='profileview'>
 <div className='profileview_left'>
-<Avatar src={session.user.image}/>
+<Avatar src={session?.user?.image}/>
 <h5>Pehjos</h5>
 </div>
 <div className='profileview_right'>
