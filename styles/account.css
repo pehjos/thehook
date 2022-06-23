@@ -1,0 +1,30 @@
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    
+    }
+    .account>h4{
+    font-size: 25px;
+     color: #333;   
+        }
+        .account>p{
+            font-size: 15px;
+             color: gray;  
+             text-align: center; 
+             margin-left: 40px;
+             margin-right: 40px;
+                }
+        .button>button{
+    border: 1px solid lightgray;
+    outline-width: 0;
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px;
+        }

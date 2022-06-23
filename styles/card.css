@@ -40,8 +40,7 @@
   .card__headerleft>h3{
   
   margin:2px;
-  font-family: 'EB Garamond', serif;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Roboto', sans-serif;
   overflow:hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -62,8 +61,7 @@
   
   }
   .twittername{
-    font-family: 'EB Garamond', serif;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Roboto', sans-serif;
     overflow:hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -83,8 +81,7 @@
   
   }
   .ttittename{
-    font-family: 'EB Garamond', serif;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Roboto', sans-serif;
     overflow:hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -95,7 +92,7 @@
     font-size: inherit;
     line-height: inherit;
     font-weight: 700;
-    width: 120px;
+    width: 130px;
     font-size:14px;
     
     overflow-wrap: anywhere;
@@ -282,7 +279,7 @@
   text-overflow:ellipsis;
   -webkit-box-orient: vertical;
   white-space: wrap;
-  color: #333;
+  color: #000000;
   text-align: left;
   font-family: 'EB Garamond', serif;
   font-family: 'IBM Plex Serif', serif;
@@ -305,8 +302,7 @@
   background-color:white;
   }
   .card__contentdescription p{
-  font-family: 'EB Garamond', serif;
-  font-family: 'IBM Plex Serif', serif;
+    font-family: 'Roboto', sans-serif;
   font-weight: 600;
   overflow:hidden;
   display: -webkit-box;
@@ -315,11 +311,11 @@
   -webkit-box-orient: vertical;
   white-space: wrap;
   justify-content: baseline;
-  color: #333;
+  color: #000000;
   margin-top:-10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 15px;
+  font-size: 14px;
   overflow-wrap: anywhere;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -351,8 +347,7 @@
   
   }
   .card__contentdescription >h5{
-  font-family: 'EB Garamond', serif;
-  font-family: 'IBM Plex Serif', serif;
+    font-family: 'Roboto', sans-serif;
   font-weight: 600;
   
   justify-content: baseline;
@@ -802,8 +797,7 @@
   
   }
   .timeline-item-content >p{
-    font-family: 'EB Garamond', serif;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     overflow:hidden;
     display: -webkit-box;

@@ -6,6 +6,7 @@ import "../styles/main.css";
 import "../styles/onmind.css";
 import "../styles/comment.css";
 import "../styles/buttonadd.css";
+import "../styles/account.css";
 import { ThemeProvider } from "next-themes";
 import { SessionProvider } from "next-auth/react";
 import { RecoilRoot } from "recoil";
