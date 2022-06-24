@@ -3,8 +3,8 @@
     position: relative;
     border-radius: 4px;
     top: 50px;
-    margin: 10px;
-    
+    margin-left: 10px;
+    margin-right: 10px;
     }
     .topcont{
     display: flex;
