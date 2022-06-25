@@ -474,7 +474,7 @@ i<56&&(
 
 <div className="footer_card_icon">
 {!session?(<ChatSquareDots onClick={() => router.push('/account')}/>):(
-<ChatSquareDots onClick={ShowWatch7} color="grey"/>)}
+<ChatSquareDots onClick={ShowWatch7} />)}
 
 {post.comments.length>0?(<p>{post.comments.length}</p>):""}  
 {statedcomment?(<div className='comment'>
@@ -547,13 +547,13 @@ i<56&&(
 </div>):""} 
 </div>
 <div className="footer_card_icon">
-{likedAlready==-1?(session?(<HandThumbsUp onClick={likePostwithId} color="grey"/>):(<HandThumbsUp onClick={() => router.push('/account')}/>))
+{likedAlready==-1?(session?(<HandThumbsUp onClick={likePostwithId} />):(<HandThumbsUp onClick={() => router.push('/account')}/>))
 :(<HandThumbsUp onClick={likePostwithId} color="red"/>)
 }
 {post.likeId?.length>0?(<p>{post.likeId?.length}</p>):"" } 
 </div> 
 <div className="footer_card_icon" >
-{session?(<ArrowRepeat onClick={handleSubmit}  color="grey"/>):(<ArrowRepeat onClick={() => router.push('/account')}/>)}
+{session?(<ArrowRepeat onClick={handleSubmit}  />):(<ArrowRepeat onClick={() => router.push('/account')}/>)}
 <p></p>   
 </div> 
 <div className="footer_card_icon">

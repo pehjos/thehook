@@ -157,6 +157,10 @@ color: white;
  
 }
 [data-theme='dark'] .timeline-item{
-  color: whitesmoke;
- 
+  background:rgb(0, 30, 60) ;
+
+}
+[data-theme='dark'] .timeline-item-content{
+margin-bottom: 5px;
+
 }

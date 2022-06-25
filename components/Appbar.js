@@ -34,7 +34,7 @@ alt="latest news"
 <PersonCircle   onClick={toggleValue} size={24}   className="ml-4"/>
 </div>
 </div>
-<Dialog className='dialog'
+<Dialog 
 fullScreen
 open={value}
 onClose={toggleValue}
