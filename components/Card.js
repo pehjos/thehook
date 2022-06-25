@@ -557,7 +557,7 @@ i<56&&(
 <p></p>   
 </div> 
 <div className="footer_card_icon">
-<Share onClick={handleSharing} color="grey"/>
+<Share   onClick={handleSharing} />
 
 </div> 
 

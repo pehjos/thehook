@@ -377,7 +377,7 @@ onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
 </div>
 </div>
 <div className="title__textArea">
-<textarea name="creator" id="input" placeholder="Add Your Article Title ..." value={postData.title}
+<textarea name="creator" id="input" placeholder="share your opinions ..." value={postData.title}
 onChange={(e)=>setPostData({...postData, title:e.target.value})}
 required
 />
@@ -409,13 +409,6 @@ required
 <a target="_self" href="https://forecastmall.com"><img src="https://i1.wp.com/www.euroscientist.com/wp-content/uploads/2020/04/chelsea-WvusC5M-TM8-unsplash-scaled.jpg?fit=2560%2C1920&ssl=1"/></a>
 <a target="_self" href="https://forecastmall.com"><img src="https://cdn2.vectorstock.com/i/1000x1000/73/31/black-and-red-business-card-template-vector-14297331.jpg"/></a>
 </div>
-</div>
-<div className="desc__textAREA">
-<textarea required name="description" placeholder="Article Description..."value={postData.description}
-onChange={(e)=>setPostData({...postData, description:e.target.value})}
-
-
-/>
 </div>
 <div className="confirm" id="confirm">
 {image?(<p id="acceptImg" onClick={uploadImage}>Upload <Check/></p>):""}

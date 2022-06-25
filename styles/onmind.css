@@ -5,12 +5,14 @@
     top: 50px;
     margin-left: 10px;
     margin-right: 10px;
+    
     }
     .topcont{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px;
+    
     }
     .topcont>p{
         display: flex;
@@ -19,6 +21,7 @@
         margin: 10px;
         font-size: 19px;
         color: gray;
+        
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     .bottomha{
@@ -26,4 +29,5 @@
         align-items: center;
         justify-content: space-evenly;
        padding: 10px;
+    
         }

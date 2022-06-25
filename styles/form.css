@@ -51,14 +51,15 @@
     
     }
     .title__textArea>textarea{
-    height: 60px;
+    height: 200px;
     border: none;
-    font-size: 16px;
+    font-size: 19px;
     outline-width: 0;
     width: 100%;
-    font-family: 'Commissioner', sans-serif;
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto',sans-serif;
     font-weight: 600;
+    border-radius: 10px;
+    background-color: none;
     color: black;
     }
     .media___sectionImageOption{

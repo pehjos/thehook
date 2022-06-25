@@ -2,7 +2,10 @@ import React from 'react'
 
 import { useRouter } from 'next/router'
 import { Pencil } from 'react-bootstrap-icons'
+import { useSession } from "next-auth/react";
+
 function Quickac({ children, href }) {
+    const { data: session } = useSession();
     const router = useRouter()
 
 
@@ -11,9 +14,11 @@ function Quickac({ children, href }) {
         <div className="quickac">
 
      
-        <div onClick={() => router.push('/createpost')} className="quickac__add">
+       {session?(<div onClick={() => router.push('/createpost')} className="quickac__add">
          <Pencil /> 
-        </div>
+        </div>):(<div onClick={() => router.push('/account')} className="quickac__add">
+         <Pencil /> 
+        </div>)}
       
        
         

@@ -4,6 +4,7 @@ import { transition } from "./transition";
 import { Badge, IconButton, Dialog, Avatar, Divider } from "@mui/material";
 import useToggle from "./useToggle";
 import Switch from './Switch'
+import { useTheme } from 'next-themes'
 import { useSession, signOut } from "next-auth/react";
 import { Compass,ChatDots,Search,
 PersonCircle,
@@ -13,12 +14,13 @@ import { BookmarkAddedOutlined, Close, ExitToApp, ExitToAppTwoTone, ExpandMore, 
 function Appbar() {
 const { value, toggleValue } = useToggle(false);
 const { data: session } = useSession();
+const { theme, setTheme } = useTheme()
 return (
 <div className="topbar">
 <div className="topbar-child" >
 <div className="icon">
-<Compass size={19} color="#333"  className="ml-4"/>  
-<ChatDots size={19} color="#333"  className="ml-4"/>
+<Compass size={19}   className="ml-4"/>  
+<ChatDots size={19}   className="ml-4"/>
 </div>
 <Image
 src="/lg.png"
@@ -28,11 +30,11 @@ className="logo"
 alt="latest news"
 />
 <div className="icon">
-<Search size={19} color="#333"   className="ml-4"/>
-<PersonCircle   onClick={toggleValue} size={24} color="grey"  className="ml-4"/>
+<Search size={19}    className="ml-4"/>
+<PersonCircle   onClick={toggleValue} size={24}   className="ml-4"/>
 </div>
 </div>
-<Dialog
+<Dialog className='dialog'
 fullScreen
 open={value}
 onClose={toggleValue}
@@ -57,7 +59,7 @@ TransitionComponent={transition}
 <h5>Pehjos</h5>
 </div>
 <div className='profileview_right'>
-<ExpandMore/>
+<ExpandMore />
 </div>
 
 </div>

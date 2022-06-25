@@ -4,6 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  color: #fff;
   background-color: #e1e9ee; 
    font-family: 'Commissioner', sans-serif;
     font-family: 'Indie Flower', cursive;
@@ -17,4 +18,130 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+[data-theme='dark'] body {
+  color: #fff;
+  background: rgb(10, 25, 41);
+}
+[data-theme='dark'],
+[data-theme='dark'] .home {
+  color: #fff;
+  background: rgb(10, 25, 41);
+}
+
+[data-theme='dark'],
+[data-theme='dark'] .cardmain{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .quickac__add{
+  color: #fff;
+  background: rgb(5, 13, 22);
+}
+[data-theme='dark'],
+[data-theme='dark'] .card__contenttitle>h5{
+  color: lightgray;
+
+}
+[data-theme='dark'],
+[data-theme='dark'] .card__contentdescription p{
+  color: lightgray;
+
+}
+
+[data-theme='dark'] .img__card{
+  border: 1px solid rgb(19, 47, 76);
+}
+
+[data-theme='dark'] .card__headerright>.MuiSvgIcon-root{
+color: white;
+}
+[data-theme='dark'],
+[data-theme='dark'] .footer_card_icon{
+color: white;
+}
+[data-theme='dark'],
+[data-theme='dark'] .footer_card_icon>.MuiSvgIcon-root{
+color: white;
+}
+[data-theme='dark'],
+[data-theme='dark'] .card_footer_all{
+color: white;
+}
+[data-theme='dark'],
+[data-theme='dark'] .timeline-item-content{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+ 
+}
+[data-theme='dark'] .timeline-item-content>p{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .timeline-container{
+  color: #fff;
+  background: rgb(10, 25, 41);
+}
+[data-theme='dark'] .timeline-item-content::after {
+  color: #fff;
+  background: rgb(0, 30, 60);
+}
+[data-theme='dark'] .repost {
+  color: #fff;
+  background: rgb(0, 30, 60);
+}
+[data-theme='dark'] .topbar {
+  color: #fff;
+  background: rgb(0, 30, 60);
+}
+
+[data-theme='light'] .topbar-child{
+  color: gray;
+ 
+}
+[data-theme='dark'] .bottom{
+  color: #fff;
+  background: rgb(0, 30, 60);
+}
+[data-theme='dark'] .bottom-icons{
+  color: #fff;
+
+}
+[data-theme='dark'] .onyourmind{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .account{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .button>button{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+  border: 1px solid rgb(5, 12, 20) ;
+}
+[data-theme='dark'] .account>h4{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .css-m9glnp-MuiPaper-root-MuiDialog-paper {
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .menus_child>p{
+  color: #fff;
+
+}
+[data-theme='dark'] .profileview_left>h5{
+  color: #fff;
+
+}
+[data-theme='dark'] .main__post{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .title__textArea>textarea{
+  color: #fff;
+  background:rgb(0, 30, 60) ;
 }
