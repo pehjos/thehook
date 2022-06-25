@@ -59,11 +59,11 @@ color: whitesmoke;
 }
 [data-theme='dark'],
 [data-theme='dark'] .footer_card_icon{
-color: white;
+color: gray;
 }
 [data-theme='dark'],
 [data-theme='dark'] .footer_card_icon>.MuiSvgIcon-root{
-color: white;
+color: gray;
 }
 [data-theme='dark'],
 [data-theme='dark'] .card_footer_all{
@@ -128,10 +128,7 @@ color: white;
   color: #fff;
   background:rgb(0, 30, 60) ;
 }
-[data-theme='dark'] .css-m9glnp-MuiPaper-root-MuiDialog-paper {
-  color: #fff;
-  background:rgb(0, 30, 60) ;
-}
+
 [data-theme='dark'] .menus_child>p{
   color: #fff;
 
@@ -164,3 +161,7 @@ color: white;
 margin-bottom: 5px;
 
 }
+[data-theme='dark'] .css-m9glnp-MuiPaper-root-MuiDialog-paper{
+  background:rgb(0, 30, 60) ;
+  color: #fff;
+  }
