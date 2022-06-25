@@ -272,7 +272,7 @@
   
   }
   .card__contenttitle>h5{
-  font-weight: 600;
+  font-weight: 500;
   overflow:hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -281,8 +281,7 @@
   white-space: wrap;
   color: #333;
   text-align: left;
-  font-family: 'EB Garamond', serif;
-  font-family: 'IBM Plex Serif', serif;
+  
   font-size: 16px;
   overflow-wrap: anywhere;
   margin-top: -4px;
@@ -325,27 +324,7 @@
   
   
   }
-  .card__contentdescription >h6{
-  font-family: 'EB Garamond', serif;
-  font-family: 'IBM Plex Serif', serif;
-  font-weight: 600;
-  overflow:hidden;
-  display: -webkit-box;
   
-  text-overflow:ellipsis;
-  -webkit-box-orient: vertical;
-  white-space: wrap;
-  justify-content: baseline;
-  color:#333;
-  font-size: 15px;
-  overflow-wrap: anywhere;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  
-  flex: 1;text-align: left;
-  margin: 10px;
-  
-  }
   .card__contentdescription >h5{
     font-family: 'Roboto', sans-serif;
   font-weight: 600;

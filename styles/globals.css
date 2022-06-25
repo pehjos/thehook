@@ -55,7 +55,7 @@ a {
 }
 
 [data-theme='dark'] .card__headerright>.MuiSvgIcon-root{
-color: white;
+color: whitesmoke;
 }
 [data-theme='dark'],
 [data-theme='dark'] .footer_card_icon{
@@ -95,7 +95,10 @@ color: white;
   color: #fff;
   background: rgb(0, 30, 60);
 }
-
+[data-theme='dark'] .topbar-child{
+  color: whitesmoke;
+ 
+}
 [data-theme='light'] .topbar-child{
   color: gray;
  
@@ -105,7 +108,7 @@ color: white;
   background: rgb(0, 30, 60);
 }
 [data-theme='dark'] .bottom-icons{
-  color: #fff;
+  color: whitesmoke;
 
 }
 [data-theme='dark'] .onyourmind{
@@ -144,4 +147,16 @@ color: white;
 [data-theme='dark'] .title__textArea>textarea{
   color: #fff;
   background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .card__headerleft{
+  color: whitesmoke;
+  background:rgb(0, 30, 60) ;
+}
+[data-theme='dark'] .card__headerleft>p{
+  color: whitesmoke;
+ 
+}
+[data-theme='dark'] .timeline-item{
+  color: whitesmoke;
+ 
 }
