@@ -59,11 +59,11 @@ color: whitesmoke;
 }
 [data-theme='dark'],
 [data-theme='dark'] .footer_card_icon{
-color: gray;
+color: lightgrey;
 }
 [data-theme='dark'],
 [data-theme='dark'] .footer_card_icon>.MuiSvgIcon-root{
-color: gray;
+color: lightgray;
 }
 [data-theme='dark'],
 [data-theme='dark'] .card_footer_all{
