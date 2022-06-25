@@ -161,7 +161,7 @@ color: white;
 margin-bottom: 5px;
 
 }
-[data-theme='dark'] .css-m9glnp-MuiPaper-root-MuiDialog-paper{
+[data-theme='dark'] .dialogcard{
   background:rgb(0, 30, 60) ;
   color: #fff;
   }

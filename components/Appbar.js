@@ -34,12 +34,13 @@ alt="latest news"
 <PersonCircle   onClick={toggleValue} size={24}   className="ml-4"/>
 </div>
 </div>
-<Dialog 
+<Dialog  
 fullScreen
 open={value}
 onClose={toggleValue}
 TransitionComponent={transition}
 >
+  <div className='dialogcard'>
   <div className='drawer_top'>
 
 <IconButton
@@ -84,6 +85,7 @@ TransitionComponent={transition}
 </div>
 </div>
 <Divider/>
+</div>
 </Dialog>  
 </div>
 )

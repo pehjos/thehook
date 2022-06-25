@@ -119,7 +119,7 @@
       color: gray;
       font-family: 'Roboto', sans-serif;
       }  
-      .css-m9glnp-MuiPaper-root-MuiDialog-paper {
-  background-color: whitesmoke;
-  
+      .dialogcard {
+        background-color: whitesmoke ;
+  height: 100vh;
       }
