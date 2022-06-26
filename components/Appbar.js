@@ -22,13 +22,7 @@ return (
 <Compass size={19}   className="ml-4"/>  
 <ChatDots size={19}   className="ml-4"/>
 </div>
-<Image
-src="/lg.png"
-width={80}
-height={40}
-className="logo"
-alt="latest news"
-/>
+<h2>Gadr</h2>
 <div className="icon">
 <Search size={19}    className="ml-4"/>
 <PersonCircle   onClick={toggleValue} size={24}   className="ml-4"/>
