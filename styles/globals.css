@@ -165,17 +165,4 @@ margin-bottom: 5px;
   background:rgb(0, 30, 60) ;
   color: #fff;
   }
-  @media(prefers-color-scheme:light){
-
-body{
-background-color: white;  
-}
-
-  }
-  @media(prefers-color-scheme:dark){
-
-    body{
-      background:rgb(0, 30, 60) ;
-    }
-    
-      }
+ 
