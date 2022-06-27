@@ -394,7 +394,7 @@ return (
 
 
 <div className="card__contentdescription">
-{statebody?(<h6><Linkify>{articlebody}</Linkify></h6>):(<p ><Linkify>{post.description}</Linkify></p>)  }
+{statebody?(<h6><Linkify>{articlebody}</Linkify></h6>):(<p ><Linkify>{post.title}</Linkify></p>)  }
 {/* {statebody?(<Close onClick={ShowWatchbody}/>):(<h5 onClick={ShowWatchbody}>{seeMore}</h5>)} */}
 </div>
 {post.image=="" && post.video==""?"":(<div className="img__card">
@@ -548,7 +548,7 @@ i<56&&(
 </div>
 <div className="footer_card_icon">
 {likedAlready==-1?(session?(<HandThumbsUp onClick={likePostwithId} />):(<HandThumbsUp onClick={() => router.push('/account')}/>))
-:(<HandThumbsUp onClick={likePostwithId} color="red"/>)
+:(<HandThumbsUp onClick={likePostwithId} color="#2196f3"/>)
 }
 {post.likeId?.length>0?(<p>{post.likeId?.length}</p>):"" } 
 </div> 

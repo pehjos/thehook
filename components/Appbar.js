@@ -18,14 +18,11 @@ const { theme, setTheme } = useTheme()
 return (
 <div className="topbar">
 <div className="topbar-child" >
+<h2>yak</h2>
 <div className="icon">
-<Compass size={19}   className="ml-4"/>  
-<ChatDots size={19}   className="ml-4"/>
-</div>
-<h2>Gadr</h2>
-<div className="icon">
-<Search size={19}    className="ml-4"/>
-<PersonCircle   onClick={toggleValue} size={24}   className="ml-4"/>
+<ChatDots size={36}   className="ml-4"/>
+<Search size={36}    className="ml-4"/>
+<PersonCircle   onClick={toggleValue} size={36}   className="ml-4"/>
 </div>
 </div>
 <Dialog  
