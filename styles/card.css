@@ -81,6 +81,7 @@
   
   }
   .ttittename{
+    color: gray;
     font-family: 'Roboto', sans-serif;
     overflow:hidden;
     display: -webkit-box;

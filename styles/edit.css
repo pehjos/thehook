@@ -1,0 +1,80 @@
+.edit{
+    background-color: white;  
+    height: 100vh;
+    }
+    .edit_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .edit_top>p{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    }
+    .edit_top>button{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 20px;
+    background-color: #2196f3;
+    }
+    .edit_cover>img{
+    width: 100%;
+    height: 200px;
+    
+    
+    }
+    .edit_profile_img>.MuiSvgIcon-root{
+        position: absolute;
+        z-index: 100;
+        color: white;
+        }
+    .edit_profile_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .edit_cover>.MuiSvgIcon-root{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    }
+    .edit_profile_img>img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    
+    border: 2px solid #2196f3;
+    }
+    .edit_inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 80px;
+    }
+    .edit_inputs>input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin: 2px;
+    outline-width: 0;
+    font-size: 15px;
+    margin: 10px;
+    }
+    .edit_inputs>label{
+    font-size: 20px;
+    }
+    #btnImgp{
+     display: none;   
+    }

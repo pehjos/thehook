@@ -1,0 +1,76 @@
+.profile{
+    background-color: white;
+    display: flex;
+    
+    flex-direction: column;
+    }
+    .profile_bar{
+    display: flex;
+    align-items: center;
+    background-color: #2196f3;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    }
+    .profile_bar>p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    }
+    .profile_bar>.MuiSvgIcon-root{
+        font-size: 20px;
+        font-weight: bolder;
+        margin-left: 10px;
+        color: white;
+        font-family: 'Roboto',sans-serif;
+        }
+    .profile_content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Roboto',sans-serif;
+    }
+    .time-date{
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    .time-date>p{
+       
+    margin: 10px;
+    
+    }
+    .followers{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-family: 'Roboto',sans-serif;
+    }
+    .followers>h3{
+    margin: 6px;
+    
+    }
+    .profile_follow{
+    
+        margin: 10px;   
+    }
+    .profile_content_right{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #2196f3;
+    font-weight: bolder;
+    font-family: 'Roboto',sans-serif;
+    border: 1px solid #2196f3;
+    border-radius: 30px;
+    }

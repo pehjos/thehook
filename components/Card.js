@@ -354,7 +354,7 @@ return (
 <p style={{color: 'gray',fontSize:13}}>{moment(moment(post.createdAt)).twitterShort()}</p>
 </div>
 
-<p className='ttittename' style={{color: 'gray',fontSize:13}}>@{post.name}</p>
+<p className='ttittename' style={{fontSize:13}}>@{post.name}</p>
 <div   className="card__headerright">
 
 {stated2?(<CloseTwoToneIcon onClick={ShowWatch2}/>):(<MoreHoriz onClick={ShowWatch2}/>)}
@@ -580,7 +580,7 @@ i<56&&(
 <Avatar style={{width:20,height:20,}}  src={comment.img}/>
 <p className='twittername'>{comment.name}</p> 
 <Dot color="#2196f3"/>
- <p className='ttittename' style={{color: 'gray',fontSize:13}}>replying to @{post.name}</p>
+ <p className='ttittename' style={{fontSize:13}}>replying to @{post.name}</p>
  <Dot color="#2196f3"/>
 <p style={{color: 'gray',fontSize:13}}>{moment(moment(comment.time)).twitterShort()}</p>
 </div>
