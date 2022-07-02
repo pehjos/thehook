@@ -170,10 +170,10 @@ color: #fff;
 background-image: none;
 }
 [data-theme='dark']  .ttittename{
-color: lightgray;
+color: rgba(211, 211, 211, 0.473);
 
 }
 [data-theme='dark']  .ttittename>p{
-color: lightgray;
+color:lightgrey;
 
       }
