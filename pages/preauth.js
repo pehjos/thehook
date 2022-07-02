@@ -4,7 +4,7 @@ import { handleUserState } from "../atoms/userAtom";
 import { useRouter } from 'next/router'
 import { useSession } from "next-auth/react";
 import { useRecoilState } from "recoil";
-function preauth(user) {
+function Preauth(user) {
 const router = useRouter()
 const { data: session } = useSession();
 const [handleuser, setHandleuser] = useRecoilState(handleUserState );
@@ -67,4 +67,4 @@ return (
 )
 }
 
-export default preauth
+export default Preauth

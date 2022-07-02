@@ -4,7 +4,7 @@ import { handleUserState, } from "../atoms/userAtom";
 import { useRouter } from 'next/router'
 import { useSession } from "next-auth/react";
 import { useRecoilState } from "recoil";
-function edit() {
+function Edit() {
 const [realtimeuser, setRealtimeuser] = useState([]);
 const router = useRouter()
 const [input1, setInput1] = useState("");
@@ -135,4 +135,4 @@ placeholder={link} type="text"/>
 )
 }
 
-export default edit
+export default Edit

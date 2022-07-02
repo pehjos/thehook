@@ -3,7 +3,7 @@ import { Avatar, Divider } from '@mui/material'
 import React from 'react'
 import { Calendar2, Dot } from 'react-bootstrap-icons'
 import { useRouter } from 'next/router'
-function profile() {
+function Profile() {
     const router = useRouter()
   return (
     <div className='profile'>
@@ -52,4 +52,4 @@ function profile() {
   )
 }
 
-export default profile
+export default Profile
