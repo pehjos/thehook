@@ -5,7 +5,8 @@ import Appbar from '../components/Appbar'
 import Bottombar from '../components/Bottombar'
 import Buttonadd from '../components/Buttonadd'
 import dynamic from 'next/dynamic'
-const Page = dynamic(() => import('../components/Page'))
+
+const Post = dynamic(() => import('../components/Post'))
 const Onmind = dynamic(() => import('../components/Onmind'))
 
 export default function Home({ posts, articles }) {
@@ -21,7 +22,7 @@ export default function Home({ posts, articles }) {
      <Appbar/>
      <Onmind/>
      <Buttonadd/>
-       <Page posts={posts} />
+     <Post posts={posts} />
     <Bottombar/>
       </main>
     </div>
