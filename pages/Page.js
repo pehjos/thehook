@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { handlePostState, useSSRPostsState } from "../atoms/postAtom";
 import dynamic from 'next/dynamic'
-const Card = dynamic(() => import('./Card'))
+const Card = dynamic(() => import('../components/Card'))
 function Page({ posts }) {
   const [realtimePosts, setRealtimePosts] = useState([]);
   const [handlePost, setHandlePost] = useRecoilState(handlePostState);
